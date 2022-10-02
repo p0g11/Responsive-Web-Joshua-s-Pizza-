@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+   
+      <meta charset="utf-8">
+      <title>Joshua's Pizza</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+   <body>
+    
+    <div class="main">
+      <nav>
+         <div class="logo">
+            Joshua's Pizza
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="" href="index.html">Home</a></li>
+            <li><a class="" href="Order.html">Order</a></li>
+            <li><a class="active" href="Gallery.html">Gallery</a></li>
+            <li><a class="" href="Contacts.html">Contact us</a></li>
+            <li><a class="" href="About.html">About us</a></li>
+         </ul>
+      </nav>
+    <style>
+        body{
+            cursor: url(cursor.png), auto;
+            text-align: center;
+        
+           
+        }
+      
+  img{
+            width: 250px;
+            height: auto;
+            margin-top: 3em;
+            margin-left: 1em;
+            border: 6px double black;
+            animation: 1s animate ease-in-out;
+            bottom: 5%;
+            margin-bottom: 20px ;
+            font-weight: bold;
+        }
+        .pizza-hawaiian{
+            font-weight: normal;
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Cedarville Cursive';
+            padding-left: 1em;
+        }
+        .pizza-bbq{
+            font-weight: normal;
+            font-size: 25px;
+            padding-left: 1em;
+            font-family: 'Cedarville Cursive';
+        }
+        .pizza-meat{
+            font-weight: normal;
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Cedarville Cursive';
+            
+        }
+        @keyframes animate{
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+    </style>
+      <img src="hawaiian.jpg" />
+      <p class="pizza-hawaiian">HAWAIIAN PIZZA</p>
+      <img src="bbq.jpg" />
+      <p class="pizza-bbq"> BBQ CHICKEN PIZZA</p>
+      <img src="meat.jpg" />
+      <p class="pizza-meat">MEAT PIZZA</p>
+                
+            <button class="btn"> RESERVE NOW</button>
+            <a href="https://www.facebook.com/joshsazon19"i class= "fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"i class="fab fa-instagram"></i></a>
+            <a href="http://www.gmail.com"i class="far fa-envelope"></i></a>
+           
+        </div>
+         </div>
+      </div>
+   </body>
+</html>

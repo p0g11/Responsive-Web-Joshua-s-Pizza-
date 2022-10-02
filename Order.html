@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+
+      <meta charset="utf-8">
+      <title>Joshua's Pizza</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        .h1-head{
+            margin-top: 5em;
+            font-size: 10px;
+            padding-bottom: 3em;
+            font-family: sans-serif;
+            
+        }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        th {
+            text-align: left;
+            padding-left: 5px;
+        
+               }
+        button{
+            
+                   padding: 8px 15px;
+                   margin-top: 10px;
+                   background-color: brown;
+                   color: white;
+                   font-size: 15px;
+                   border: 1px solid white;
+                   border-radius: 5px;
+                     
+        }
+        
+        
+             </style>
+   </head>
+   <body>
+   
+    <div class="main">
+      <nav>
+         <div class="logo">
+            Joshua's Pizza
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="" href="index.html">Home</a></li>
+            <li><a class="active" href="Order.html">Order</a></li>
+            <li><a class="" href="Gallery.html">Gallery</a></li>
+            <li><a class="" href="Contacts.html">Contact us</a></li>
+            <li><a class="" href="About.html">About us</a></li>
+         </ul>
+      </nav>
+     
+      
+    
+      <div class="h1-head">
+        <h1 style="text-align: center">Joshua's Pizza Delivery</h1>
+    <h2 style="text-align: center">Online Order Form</h2>
+   </div>
+        <!-- Pizza Delivery Form -->
+        
+        <div class="container">
+            <!-- Data inside table -->
+            <table align="center" cellpadding="1">
+               
+             
+                     <td> Name: </td> 
+                     <td><input type="text"/> </td>
+                     <tr>
+                     <td> Telephone: </td>
+                     <td><input type="text" name="tel"/></td>
+                     </tr>
+
+                   
+                 
+                       <td> Address: </td> 
+                       <td><input type="text" name="address" id="address"></td>
+                        <tr></tr>                                     
+                       <td> Email: </td>
+                       <td><input type="email" name="email" id="email"></td>            
+                    </tr>     
+
+                   
+                       <td> Town/City: </td> 
+                       <td><input type="text" name="town/city" id="town/city"></td>
+                       <tr>
+                           <td> Postcode: </td> 
+                           <td><input type="text" name="postcode" id="postcode"></td>     
+                       </tr>
+                    
+                      
+                <!-- Choics Options -->
+                
+                <tr>
+                    <th>TOPPING</th>
+                    <th>SIZE</th>
+                    <th>EXTRAS</th>
+                </tr>
+             
+               <!-- Row 1 -->
+           <tr>
+               <td><input type="radio" name="type" value="Hawaiian Pizza">Hawaiian Pizza</td>
+               <td><input type="radio" name="size" value="small" value="Small">Small</td>
+               <td><input type="radio" name="extra" value="Mushrooms">Mushrooms</td> 
+               
+           </tr>
+
+           <!-- Row 2 -->
+           <tr>
+               <td><input type="radio" name="type" value="BBQ Chicken Pizza">BBQ Chicken Pizza</td>
+               <td><input type="radio" name="size" value="Medium">Medium</td>
+               <td><input type="radio" name="extra" value="Green Peppers">Green Peppers</td>
+           </tr>
+
+           <!-- Row 3 -->
+           <tr>
+               <td><input type="radio" name="type" value="Meat Pizza">Meat Pizza</td>
+               <td><input type="radio" name="size" value="Large">Large</td>
+             <td><input type="radio" id="click" name="extra" value="Anchovies"> <label for="vehicle1"> Anchovies</label></td>  
+ 
+               <!--<td><input type="checkbox" id="click" name="extra" value="Anchovies">Anchovies</td> -->
+           </tr> 
+
+           <!-- Row 4 -->
+           <tr>
+               <td></td>
+               <td></td>
+               <td><input type="radio" name="extra" value="Extra Cheese">Extra Cheese</td>
+           </tr>
+                <!-- Delivery Time -->
+                <tr>
+                    <td>
+                        <label>Preffered Delivery Time: </label>
+                    </td>
+                    <td colspan="2">
+                        <input type="time" name="delivery_time" id="delivery_time">
+                    </td>
+                </tr>
+    
+                <!-- Delivery Instruction -->
+                <tr>
+                    <td>
+                        <label>Delivery Instructions: </label>
+                    </td>
+                    <td colspan="2">
+                        <textarea rows="5" cols="30" name="instuctions" id="instuctions"></textarea>
+                    </td>
+                </tr>
+    
+                <!-- Submit Button -->
+                <tr>
+                    <td colspan="3" align="center">
+                        <script >
+                            function submit(){
+        alert ("Thank you for filling up. We will update your order as soon as possible.");
+    }
+  submit
+                        </script>
+                        
+                        <button onclick="submit()">Submit</button>
+                    
+                        <!--<a href="script.js"button type="submit" name="submit" id="submit">Submit Order</button></a>-->
+                        
+                        <!--<button type="submit" name="submit" id="submit">Submit Order</button>-->
+                    </td>
+                </tr>
+              
+            </table>
+        </form>
+            
+</body>
+</html>
+         </div>
+      </div>
+   </body>
+</html>

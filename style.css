@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+*{ font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    cursor:url(cursor.png), auto;
+
+}
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: indianred;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+ 
+}
+nav .logo{
+
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Cedarville Cursive';
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+.main-img{
+
+width: 20em;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5em;
+animation: 1s animate ease-in-out;
+}
+@keyframes animate{
+  0%{
+      opacity: 0;
+      transform: scale(.5);
+  }
+  100%{
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: burlywood;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 50%;
+  padding: 0 30px;
+  color: #1b1b1b;
+  margin-top: 20em;
+  margin-bottom: 15em;
+
+  
+}
+.content h1{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.content p{
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New';
+    width: 100%;
+}
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    padding: 10px;
+    border: 2px double black;
+    border-radius: 13px;
+    margin-bottom: 10em;
+}
+.btn:hover{
+    background: brown;
+    color: #e6eaff;
+}
+.contacts{
+
+  margin-bottom: 600px;
+  padding-top: 15em;
+ 
+}
+.contacts h1{
+  font-family: 'Cedarville Cursive';
+  
+}
+.contacts p{
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 20px;
+}
+.About {
+ margin-bottom: 620px;
+ padding-top: 15em;
+
+}
+.About h1{
+  font-family: 'Cedarville Cursive';
+}
+.About p{
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 16px;
+}
