@@ -135,7 +135,7 @@ input[type="checkbox"]{
   width: 50%;
   padding: 0 30px;
   color: #1b1b1b;
-  margin-top: 20em;
+  margin-top: 30em;
   margin-bottom: 15em;
 
   
@@ -156,22 +156,26 @@ input[type="checkbox"]{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 29em;
     padding: 10px;
     border: 2px double black;
     border-radius: 13px;
     margin-bottom: 10em;
+    
 }
 .btn:hover{
-    background: brown;
-    color: #e6eaff;
+    background: #e6eaff;
+    color: white;
 }
 .contacts{
-
-  margin-bottom: 600px;
-  padding-top: 15em;
- 
+  width: 250px;
+  height: 500px;
+  margin-top: 3em;
+  margin-left: 1em;
+  margin-bottom: 150px ;
+  transform: translate(-30%, -30%);
 }
+
 .contacts h1{
   font-family: 'Cedarville Cursive';
   
@@ -182,9 +186,13 @@ input[type="checkbox"]{
   font-size: 20px;
 }
 .About {
- margin-bottom: 620px;
- padding-top: 15em;
-
+          
+           width: 250px;
+            height: 500px;
+            margin-top: 3em;
+            margin-left: 1em;
+            margin-bottom: 220px ;
+            transform: translate(-30%, -30%);
 }
 .About h1{
   font-family: 'Cedarville Cursive';
