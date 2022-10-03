@@ -62,7 +62,7 @@ width: 20em;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 5em;
+margin-top: 4em;
 animation: 1s animate ease-in-out;
 }
 @keyframes animate{
@@ -135,7 +135,7 @@ input[type="checkbox"]{
   width: 50%;
   padding: 0 30px;
   color: #1b1b1b;
-  margin-top: 30em;
+  margin-top: 33em;
   margin-bottom: 15em;
 
   
@@ -144,6 +144,7 @@ input[type="checkbox"]{
     font-size: 2rem;
     text-align: center;
     width: 100%;
+   
 }
 .content p{
     margin-top: 30px;
@@ -151,12 +152,13 @@ input[type="checkbox"]{
     text-align: center;
     font-family: 'Courier New';
     width: 100%;
+    
 }
 .btn{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 29em;
+    margin-top: 40em;
     padding: 10px;
     border: 2px double black;
     border-radius: 13px;
@@ -172,8 +174,9 @@ input[type="checkbox"]{
   height: 500px;
   margin-top: 3em;
   margin-left: 1em;
-  margin-bottom: 150px ;
+  margin-bottom: 21em ;
   transform: translate(-30%, -30%);
+
 }
 
 .contacts h1{
@@ -190,12 +193,14 @@ input[type="checkbox"]{
            width: 250px;
             height: 500px;
             margin-top: 3em;
-            margin-left: 1em;
-            margin-bottom: 220px ;
-            transform: translate(-30%, -30%);
+            margin-left: 2em;
+            margin-bottom: 370px ;
+            transform: translate(-30%, -40%);
+           
 }
 .About h1{
   font-family: 'Cedarville Cursive';
+  
 }
 .About p{
   font-family: Helvetica;
